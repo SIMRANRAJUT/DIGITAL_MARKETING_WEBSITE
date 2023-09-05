@@ -1,0 +1,566 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the header */
+header {
+    background-color: #c966c9;
+    color: #9fa547;
+    padding: 15px 0;
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    text-decoration:wavy;
+    font-size: 50px;
+    font-weight: bold;
+    color: #be39d8e7;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff5733; /* Change color on hover */
+}
+
+/* Hamburger menu styles for mobile */
+.hamburger {
+    display: none; /* Hide by default on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the navigation links */
+        flex-direction: column;
+        background-color: #d74343;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the navigation links when active */
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    .bar.rotate-down {
+        transform: rotate(-45deg) translateY(3px);
+    }
+
+    .bar.rotate-up {
+        transform: rotate(45deg) translateY(-3px);
+    }
+
+    .bar.opacity {
+        opacity: 0;
+    }
+}
+/* Add styles for the icon */
+.icon {
+    font-size: 24px; /* Adjust the size of the icon */
+    color: #f4f9f1; /* Icon color */
+    margin-right: 10px; /* Add spacing between the icon and other navigation items */
+}
+
+/* Adjust the size and margin of the icon */
+.logo img {
+    width: 70px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Add spacing between the icon and the text */
+    
+    
+}
+    /* Basic styling for the hero section */
+
+
+.hero {
+    background-image: url('https://c0.wallpaperflare.com/preview/263/921/102/business-communication-computer-concept.jpg'); /* Add your background image */
+    background-size:contain;
+    background-position: center;
+    height: 100vh;
+    color: #454244;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e74c23;
+}
+/* Basic styling for the homepage */
+
+
+
+
+/* nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+} */
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+/* .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+/* h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+} */
+
+.cta-button {
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e74c23;
+}
+
+.features {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .features {
+        padding: 20px 0;
+    }
+
+    .feature {
+        max-width: 100%;
+    }
+}
+/* Basic styling for the service page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Add styles for navigation bar (reuse styles from homepage) */
+
+.service-content {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin-bottom: 40px;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Basic styling for the About Us page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Add styles for the navigation bar (reuse styles from other pages) */
+
+.about-content {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Basic styling for the Portfolio page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Add styles for the navigation bar (reuse styles from other pages) */
+
+.portfolio-content {
+    padding: 40px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #e74c23;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Basic styling for the Contact Us footer */
+.contact-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 0 0 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e74c23;
+}
+/* Basic styles for the login form */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.login-container {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: rgb(234, 11, 11);
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Basic styles for the search engine */
+
+
+.search-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#results li {
+    margin: 10px 0;
+}
+
+.content{
+    text-align: center;
+   
+}
+
+
